@@ -69,7 +69,17 @@ public class Collections {
         stringList.add("World");
         // {"Hello!", "Hello!", "World"}
         
-        stringList.set(1, "World");
-        // {"Hello!", "World", "World"}
+        stringList.set(0, "World");
+        // {"World", "Hello", "World"}
+        
+        stringList.remove("World");
+        // {"Hello!", "World"} Removes the first instance with that element.
+ 
+        //Method of looping and removing "World"
+//        while (stringList.contains("World")){
+//            stringList.remove("World");
+//        }
+
+        
     }  
 }
